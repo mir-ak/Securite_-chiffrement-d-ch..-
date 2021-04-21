@@ -1,0 +1,77 @@
+
+
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Exercice 1 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+sbox = [12, 5, 6, 11, 9, 0, 10, 13, 3, 14, 15, 8, 4, 7, 1, 2]
+
+
+2 => famille chiffrement symetrique (chiffrement par bloc)
+3 => 
+a) => 4 bits
+b) => 8 bits
+c) => 2 tours
+d) => xor et un passage dans la boite s 
+e) => passage dans la boite s 
+f) => reste les memes
+
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Exercice 2 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1.a => Le type d'attaque KPA
+1.b => exemple 
+def attack_tc1r(m,c):
+	return xobs[c] ^ m
+
+2 => parce que on a pas la sortie du 1er tour ni l'entree du 2eme tour 
+exemple
+def enc(m,key):
+	t = sbox[m ^ key[0]]
+	c = sbox[t ^ key[1]]
+	return c
+
+3-a) il ya 16 clef de tour possible
+3-b) on ne peut pas tester toutes les clefs psk on a pas le t
+
+4) 512 étapes pour force brut 
+
+5-a => une des solutions et je l'ai implémenter dans le tp.py 
+	key = random.randint(0,15), random.randint(0,15)
+	m = [i for i in range(0,16)]
+	c = [enc(i,key) for i in m]
+	for k0 in range(0,16):
+		for k1 in range(0,16):
+			ok = True
+			for i in range(0,16):
+				if c[i] != enc(m[i], (k0,k1)):
+					ok = False 
+			if ok : 
+				print((k0,k1))
+5-b => on peut casse l'algo seulement si on trouve la clef mais dans ce cas je pense pas  
+5-c => parce qu'on génér des clef aleatoire du coup on peut de ne pas trouve une clef a la fin mais dans mon cas ca marche 
+5-d => 16*16*16*2
+6 => dans tp3.py
+
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Exercice 3 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1 => parce que dans le premier toure on aura le x mais on aura pas le y 
+			 et dans le deuxième tour on aura pas le x mais on aura le y du coup c'est pas une fonction linéaire.
+2 => tp3.py
+3 => tp3.py			 
+
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Exercice 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+
+2 => Avez vous une idée de telle fonction?
+	on rajout a notre fonction deux scoure: score_equal,score_notequal
+3 => tp3.py
+
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Exercice 5 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+		  
+1 => avec la fonction k0 on peut avoire k1 		  
+2 => tp3.py
+3 => tp3.py
+		  
+     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Exercice 6 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ 
+1 => 32 étapes 
+2 => 2⁴*2 > (2⁸)*2 = 512 du coup je dirais l’attaque a une complexité 
+3 => oui parce que on codé sur 4 bits les message et la clef du coup 
+4 => c'est d'avoir une boit s en hexadécimal dans tp3.py 		  
+		  

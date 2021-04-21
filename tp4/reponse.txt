@@ -1,0 +1,21 @@
+Question 1:
+- La valeur de m est 53616c7574
+- LA valeur de N est 032ffc831c
+  LA valeur de s est 02ac56b084
+
+Question 2:
+- modeexp ca signifie le exponentiation modulaire 
+
+- L'algo de "modexp" :
+    
+    s := 1
+    m := m % N
+    tant que d != 0:
+        si d & 1 = 1 alors:
+            s := (s * m) % N
+        fin
+        m := (m * m) % N
+        d := d >> 1
+  
+Question 4:
+- On voit le progromme a effectué trois tours de calcule avant qu'il s'arrêter.

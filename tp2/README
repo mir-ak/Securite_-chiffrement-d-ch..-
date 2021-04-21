@@ -1,0 +1,37 @@
+
+
+===================================== TP 2 RSA ====================================================
+
+==========Pour l'exécution========
+
+1=> en mode terminal : j'ai tout mis en commentaire 
+2=> en mode Graphique : python3 graphique.py 
+
+j'ai utilisé la bib tkinter 
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+A)pour l'utilisation en mode graphique vous une fenêtre de 2 onglet 
+
+1=> le premier onglet c'est le chiffrement et déchiffrement RSA d'un message c'est un formulaire a remplir 
+ cette fois juste le message parce que les clés je l'ai génère en cliquant sur les bouton, sur le bouton clé Public 
+ elle génère une paire de clé k0,k1 le k0 je le mis dans le premeir case a rempli et le k1 dans le deuxième 
+ et le message dans le troisème puis y'a un bouton encrypté et décrypté et aussi il faut supprimer la clef avec le bouton sup 
+ pour génère la deuxième pour passe ou décrypté puis j'ai afficher le résultat entre deux bouton enc et dec 
+
+exemple : 
+	vous cliquez sur cle prive il vous génère (k0,k1) 
+	puis vous écrivez le message puis vous encrypté 
+	puis vous supprimer la clé avec <sup> puis vous génère
+	la deuxième clé (publique) puis vous decrypté et la y'aura 
+	votre message que vous avez tape au debut 
+	
+2=> le deuxième onglet c'est la signateur et la vérification c'est la même manip que la premier juste ici on signe puis on vérifie
+ la signateur c'est on respect la manip on trouve True dans la vérfication et il faut pas oubleir de supprimer la clef pour génère 
+
+3=> y'a une casse a rmplis c'est la premier pour génère les clef sur combien de bits mais malheureusement j'arrive pas a l'implémenter 
+correctement du coup des fois elle marche bien des fois elle fait nimp
+
+          ======================= désole pour les fautes d'orthographe si j'en ai fait en fait ça c'est sur 😆️ ==========================================
+          
+         

@@ -1,0 +1,53 @@
+
+===================================== TP 1 Chiffrement par Bloc ====================================================
+
+==========Pour l'exécution========
+
+1=> en mode terminal : python3 run_mode_terminal.py
+2=> en mode Graphique : python3 graphique.py 
+
+j'ai utilisé la bib tkinter 
+
+A)pour l'utilisation en mode terminal vous avez a menu qui s'affiche de 10 paramètres vous
+ choisissez en numéro de 0 a 10 selon ce que vous voulez teste 
+
+1=> par contre pour les clés on peut pas la saisir entier exemple (4,11) 
+ mais ce que je demande moi dans le menu c'est de saisir une paire (k0 et k1) de clé exemple 
+ je mis 4 par exemple puis je demande de saisir la 2eme paire k1 (un chiffre) je mis 11 puis moi je l'ai recombine et ça donne au final (4,11)
+
+2=> pour les fichier je demande de saisir le nom de fichier il faut qu'il soit a cote de fichier .py puis 
+ pour chiffre .txt et pour déchiffre il faut d’abord chiffre on aura un fichier .enc
+ puis en passe ce fichier dans le dec pour avoir le fichier .dec 
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+B)pour l'utilisation en mode graphique vous une fenêtre de 4 onglet elle représente comme une page web
+
+1=> le premier onglet c'est le enc et dec d'une lettre uniquement c'est un formulaire a remplir la lettre 
+ puis le k0(1) et k1(7) puis je l'ai combine ça donne au final (k0,k1)=>(1,7) il y a une petit combo pour choisir le enc puis le dec 
+
+2=> le deuxième onglet on le enc_file (chiffrer a prtire d'un fichier)
+ la je demande de rentre la clef comme d'hab k0 puis k1 un chiffre un chiffre pour chacun 
+ puis dans la combo on choisi le mode en-crypté qaund on clique y'aura une fenêtre qui apparaît pour parcourir le fichie 
+ et j'affiche même le résultat tout en bas
+
+3=> le troisième onglet c'est le dec_file (dechiffrer a prtire d'un fichier)
+ la je demande de rentre une clef pareil k0 puis k1 et puis dans la combo y'a les 4 mode de dec_file
+ la parcontre je parcourir que les fichie .enc donc c'est vous avez pas chiffre vous pouvez pas déchiffre
+ et aussi il faut ce souvnire de la clef en fait vous pouvez revenir en arriér vers enc_file vous trouve 
+ la celf que vous avez saisir et j'affiche même le résultat puis apres vous allez ou ce trouve les fichier vous trouve les 
+ .txt .enc .dec les .txt et .dec c'est le même contenu  
+ 
+4=> le quatriéme onglet c'est le chiffrement des image en mode ECB et CBC 
+ je me suis inspire des tutuer sur le web et j'ai utlise la "bib from Crypto.Cipher import AES" 
+ elle fait tout le travail mais j'ai trouve ca sympa 
+ je demende d'entre une clef de taille 16 apres si vous avez la flemme d'écrire 😅️ vous pouvez clique sur le bouton jaune 
+ pour il vous génère la clef et puis vous choisissez dans la combo le mode de chiffrement de l'image puis y aura une fenêtre qui s'affiche
+ pour parcourir l'image puis vous trouve l'image chiffré dans le même dossier avec l'image d'orgine et le bouton sup pour supprimer le clef 
+ si vous voulez génère à nouveau la clef si vous le suprime et vous clique sur génère ca va rajoute a l'ancien ca va devenir 32 et ca marche aussi
+ la cle ça marche sur 16 24 32 plus moins none et pour CBC je mis mon iv par défaut 
+ 
+          ======================= désole pour les fautes d'orthographe si j'en ai fait en fait ça c'est sur 😆️ ==========================================
+          
+          et aussi monsieur je connais pas trop python c'est la premier fois que je l'utilise de coup dans le code graphique.py j'ai trop code et un peut n'import 
+          comment  

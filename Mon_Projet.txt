@@ -1,0 +1,15 @@
+Nom : AIT EL DJOUDI 
+Prénom : Karim 
+e_mail : aiteldjoudikarim06@gmail.com
+
+Bonjour Monsieur
+ 
+ À propos de Projet 
+	j'ai fait 4 tp complet le tp1,tp2,tp3,tp5 
+	et j'ai fait deux Interface Graphique pour le tp1 et tp2 <pour info j'ai utilisé tkinter>  
+	et je me suis même allé un peu loin 🤣️ pour le premie tp1
+	je chiffres une image mode ECB ET CBC on la parcours dans dossier 
+	puis on trouve son chiffré dans le même dossier que l'original 
+	le tp 4 il me reste les deux dernières questions dans l'exo 1 mais j'arrive pas
+	
+>>>>> du coup MON PROJET c'est <TP1,TP2,TP3,TP5> <<<<<<<<<<<<<<<

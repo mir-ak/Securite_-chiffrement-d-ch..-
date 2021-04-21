@@ -1,0 +1,9 @@
+
+       --------------------------------------------------- Exercice 3 ------------------------------------------------------------------------------------
+1=>Que remarquez-vous?
+	on remaque que y'a une répétition dans certains caractére dans le mots coucou 
+2=> Proposez un type d’attaque contre ce chiffrement 
+	une attaque kpa
+
+3=> Quel est l’avantage de la génération aléatoire du vecteur d’initialisation?
+	pour qu'on aura pas une répétition des caractére aussi c'est dur a attaque 
