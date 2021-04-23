@@ -9,10 +9,10 @@
 j'ai utilisé la bib tkinter 
 
 A)pour l'utilisation en mode terminal vous avez a menu qui s'affiche de 10 paramètres vous
- choisissez en numéro de 0 a 10 selon ce que vous voulez teste 
+ choisissez un numéro de 0 a 10 selon ce que vous voulez teste 
 
 1=> par contre pour les clés on peut pas la saisir entier exemple (4,11) 
- mais ce que je demande moi dans le menu c'est de saisir une paire (k0 et k1) de clé exemple 
+ mais ce que je demande moi dans le menu c'est de saisir une paire (k0 et k1) exemple 
  je mis 4 par exemple puis je demande de saisir la 2eme paire k1 (un chiffre) je mis 11 puis moi je l'ai recombine et ça donne au final (4,11)
 
 2=> pour les fichier je demande de saisir le nom de fichier il faut qu'il soit a cote de fichier .py puis 
@@ -47,7 +47,3 @@ B)pour l'utilisation en mode graphique vous une fenêtre de 4 onglet elle repré
  si vous voulez génère à nouveau la clef si vous le suprime et vous clique sur génère ca va rajoute a l'ancien ca va devenir 32 et ca marche aussi
  la cle ça marche sur 16 24 32 plus moins none et pour CBC je mis mon iv par défaut 
  
-          ======================= désole pour les fautes d'orthographe si j'en ai fait en fait ça c'est sur 😆️ ==========================================
-          
-          et aussi monsieur je connais pas trop python c'est la premier fois que je l'utilise de coup dans le code graphique.py j'ai trop code et un peut n'import 
-          comment  
